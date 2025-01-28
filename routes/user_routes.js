@@ -4,6 +4,9 @@ import { signup } from '../controllers/user_controller.js'
 import {authenticationToken} from '../controllers/user_controller.js';
 
 const routes = express.Router();
+routes.get('/' , (req , res)=>{
+      res.send("Hello Welcome to site")
+})
 routes.post('/signup' , signup)
 routes.post('/login' , login);
 
